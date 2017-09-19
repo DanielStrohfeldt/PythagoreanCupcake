@@ -28,4 +28,3 @@ class Room:
         self._squares.remove(square)
         self._area -= square.area
             
-

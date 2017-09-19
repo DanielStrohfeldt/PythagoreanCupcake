@@ -2,7 +2,7 @@ class Square:
 
     def __init__(self, width, length):
         self._width = int(width)
-        self.length = int(length)
+        self._length = int(length)
 
     @property
     def width(self):
@@ -18,5 +18,5 @@ class Square:
 
     @property
     def area(self):
-        return self._width ** 2 
+        return self._width * self._length 
 

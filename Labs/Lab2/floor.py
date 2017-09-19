@@ -19,3 +19,11 @@ class Floor:
 
     def change_floor_number(self, number):
         self._floor_number = number
+
+    def add_room(self, room):
+        self._rooms.append(room)
+        self._area += room.area
+
+    def remove_room(self, room):
+        self._rooms.remove(room)
+        self._area -= room.area
